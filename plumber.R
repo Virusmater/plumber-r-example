@@ -18,8 +18,9 @@ function(bin_count) {
   bins <- seq(min(x), max(x), length.out = as.integer(bin_count) + 1)
   
   hist(x, breaks = bins, col = "#75AADB", border = "white",
-       xlab = "Waiting time to next eruption (in mins)",
-       main = "Histogram of waiting times")
+       xlab = "Duration of Survival (month)",
+       ylab = "DFS",
+       main = "Duration of Survival")
 
   
 }
